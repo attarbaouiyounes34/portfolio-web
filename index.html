@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Younes ATTARBAOUI — Étudiant BUT R&T, passionné Cybersécurité & Réseaux, en recherche d'alternance 2026-2028." />
+  <title>Younes ATTARBAOUI — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">YA<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#projets" class="nav-link">Projets</a></li>
+      <li><a href="#parcours" class="nav-link">Parcours</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="CV_ATTARBAOUI_Younes.pdf" download class="nav-cta">CV <span class="accent">↓</span></a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <div class="hero-tag reveal">
+          <span class="dot"></span>
+          Disponible pour alternance 2026–2028
+        </div>
+        <h1 class="hero-title reveal">
+          <span class="line">YOUNES</span>
+          <span class="line">ATTAR<span class="outline">BAOUI</span></span>
+        </h1>
+        <p class="hero-sub reveal">Étudiant en BUT R&T — Cybersécurité, Réseaux & Systèmes</p>
+        <p class="hero-desc reveal">
+          Passionné par la conception d'infrastructures robustes et la sécurisation des systèmes.<br />
+          En recherche active d'une alternance <strong class="accent">2026–2028</strong>.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">// 01 — Projets & Infra</span>
+          <h2 class="section-title">Ce que je construis.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal" data-index="0">
+            <div class="card-top">
+              <span class="card-num">01</span>
+              <div class="card-tags">
+                <span class="tag">Debian</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Nginx</span>
+              </div>
+            </div>
+            <h3 class="card-title">Infrastructure Hébergement</h3>
+            <p class="card-desc">Serveur home-lab sous Debian CLI, conteneurisation Nginx via Docker, supervision en temps réel avec Uptime Kuma. Ce portfolio tourne dessus.</p>
+            <div class="card-footer">
+              <span class="card-status"><span class="dot accent-dot"></span>En production</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal featured" data-index="1">
+            <div class="card-top">
+              <span class="card-num">02</span>
+              <div class="card-tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Énergie</span>
+                <span class="tag">Design</span>
+              </div>
+            </div>
+            <h3 class="card-title">Table Solaire APPY</h3>
+            <p class="card-desc">Conception d'une table connectée éco-responsable intégrant panneau photovoltaïque et recharge USB. Projet primé nationalement.</p>
+            <div class="awards">
+              <div class="award"><span>🏆</span> 1er Prix — Olympiades des Sciences de l'Ingénieur</div>
+              <div class="award"><span>⭐</span> Prix Coup de Cœur — Lépine</div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-index="2">
+            <div class="card-top">
+              <span class="card-num">03</span>
+              <div class="card-tags">
+                <span class="tag">VLAN</span>
+                <span class="tag">OSPF</span>
+                <span class="tag">ANSSI</span>
+              </div>
+            </div>
+            <h3 class="card-title">Réseaux & Cybersécurité</h3>
+            <p class="card-desc">Routage avancé, segmentation VLAN, protocole OSPF. Certification MOOC ANSSI obtenue avec un score de 100%.</p>
+            <div class="card-footer">
+              <span class="card-status"><span class="dot accent-dot"></span>Certifié ANSSI — 100%</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-index="3">
+            <div class="card-top">
+              <span class="card-num">04</span>
+              <div class="card-tags">
+                <span class="tag">VR</span>
+                <span class="tag">Hackathon</span>
+                <span class="tag">Innovation</span>
+              </div>
+            </div>
+            <h3 class="card-title">Hackathon IUT</h3>
+            <p class="card-desc">Projet de mobilité écologique en réalité virtuelle conçu lors d'un hackathon inter-IUT. Distingué par le jury pour son originalité.</p>
+            <div class="awards">
+              <div class="award"><span>🎖️</span> Prix Coup de Cœur — Hérault Transport</div>
+            </div>
+          </article>
+
+          <article class="project-card reveal featured" data-index="4" style="grid-column: 1 / -1;">
+            <div class="card-top">
+              <span class="card-num">05</span>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Open Data</span>
+                <span class="tag">Data Science</span>
+              </div>
+            </div>
+            <h3 class="card-title">Observatoire Mobilité — Montpellier Métropole</h3>
+            <p class="card-desc">
+              Tableau de bord temps réel dédié à la mobilité urbaine (voitures & vélos) sur la Métropole de Montpellier. Intègre une couche Data Science : nettoyage en direct, détection statistique des capteurs défectueux par écart-type, lissage horaire. Un véritable outil d'aide à la décision, entièrement autonome.
+            </p>
+            <div class="project-pipeline">
+              <div class="pipeline-step">
+                <span class="pipeline-icon">🧠</span>
+                <div>
+                  <strong>Python</strong>
+                  <p>Extraction Open Data métropolitain, nettoyage par écart-type, lissage horaire</p>
+                </div>
+              </div>
+              <div class="pipeline-arrow">→</div>
+              <div class="pipeline-step">
+                <span class="pipeline-icon">⚙️</span>
+                <div>
+                  <strong>GitHub Actions</strong>
+                  <p>Orchestration cyclique 24h/24, 7j/7 — aucune intervention humaine</p>
+                </div>
+              </div>
+              <div class="pipeline-arrow">→</div>
+              <div class="pipeline-step">
+                <span class="pipeline-icon">🌐</span>
+                <div>
+                  <strong>Site Statique Auto-généré</strong>
+                  <p>JSON compilé à chaque cycle, mise à jour invisible et continue</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/attarbaouiyounes34/API-Parking-Velo-Montpellier" target="_blank" rel="noopener" class="card-gh-link">
+                Voir sur GitHub ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section" id="parcours">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">// 02 — Parcours</span>
+          <h2 class="section-title">Mon chemin.</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <span class="timeline-year">2025 <span class="accent">→</span> auj.</span>
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-right">
+              <h3 class="timeline-title">BUT Réseaux & Télécommunications</h3>
+              <p class="timeline-place">IUT de Béziers</p>
+              <p class="timeline-desc">Formation en réseaux, systèmes, cybersécurité et administration infrastructure. Projets pratiques et alternance.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <span class="timeline-year">2024 <span class="accent">→</span> 2025</span>
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-right">
+              <h3 class="timeline-title">Expériences Professionnelles</h3>
+              <p class="timeline-place">Maison de la Glace & Summer Box</p>
+              <p class="timeline-desc">Vendeur & employé polyvalent. Développement du sens du service, de la gestion de la relation client et du travail en équipe.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <span class="timeline-year">2022 <span class="accent">→</span> 2025</span>
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-right">
+              <h3 class="timeline-title">Bac STI2D — Énergie & Environnement</h3>
+              <p class="timeline-place">Lycée A. Loubatières</p>
+              <p class="timeline-desc">Spécialité Énergie & Environnement. Mention obtenue. Projets techniques pluridisciplinaires dont la Table Solaire APPY, primée aux Olympiades.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content reveal">
+          <div class="footer-cta-label">// 03 — Contact</div>
+          <h2 class="footer-title">Construisons<br /><span class="accent">ensemble.</span></h2>
+          <p class="footer-sub">Je suis disponible pour une alternance en Cybersécurité ou Réseaux dès <strong class="accent">2026</strong>. N'hésitez pas à me contacter directement.</p>
+
+          <div class="footer-links">
+            <a href="mailto:attarbaouiyounes34@gmail.com" class="footer-link">
+              <span class="link-label">Email</span>
+              <span class="link-val">attarbaouiyounes34@gmail.com</span>
+            </a>
+            <a href="tel:0749278547" class="footer-link">
+              <span class="link-label">Téléphone</span>
+              <span class="link-val">07 49 27 85 47</span>
+            </a>
+            <a href="https://www.linkedin.com/in/younes-attarbaoui-74b579356/" target="_blank" rel="noopener" class="footer-link">
+              <span class="link-label">LinkedIn</span>
+              <span class="link-val">younes-attarbaoui ↗</span>
+            </a>
+            <a href="https://github.com/attarbaouiyounes34" target="_blank" rel="noopener" class="footer-link">
+              <span class="link-label">GitHub</span>
+              <span class="link-val">attarbaouiyounes34 ↗</span>
+            </a>
+          </div>
+
+          <a href="CV_ATTARBAOUI_Younes.pdf" download class="btn btn-primary btn-large">
+            Télécharger mon CV <span class="accent">↓</span>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Younes ATTARBAOUI</span>
+          <span>Hébergé sur ma propre infra — Debian · Docker · Nginx</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
